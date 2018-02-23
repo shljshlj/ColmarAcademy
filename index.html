@@ -10,9 +10,15 @@
   <body>
 
     <!-- Header -->
-    <header class="container">
-        <img src="./resources/images/ic-logo.svg">
-        <a href="index.html" class="logo desktop">Colmar Academy</a>
+
+    <header >
+      <div class="container">
+        <div class="logo">
+          <img src="./resources/images/ic-logo.svg">
+          <span>
+            <a href="index.html" class="desktop"><em>COLMAR</em><span class="light">ACADEMY</span></a>
+          </span>
+        </div>
         <nav class="desktop">
           <ul>
             <li><a href="#">On campus</a></li>
@@ -28,28 +34,39 @@
             <li><a href="#"><img src ="./resources/images/ic-login.svg"></a></li>
           </ul>
         </nav>
+      </div>
     </header>
 
+
     <!-- Banner -->
-    <div class="banner container">
-      <div>
-        <img src="./resources/images/banner2.jpg">
-      </div>
-      <div>
-        <h1>Learn something new every day</h1>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-        <a class="button" href="#">Start here</a>
+
+    <div id="banner" >
+      <div class="container">
+        <div class="left">
+          <div class="image-container">
+            <img src="./resources/images/banner2.jpg">
+          </div>
+        </div>
+        <div class="right">
+          <div class="main">
+            <h1>Learn something new every day</h1>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+            <a class="button" href="#">Start here</a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Main Content -->
+    <!-- Information -->
 
-    <div class="container">
+    <section class="information">
 
       <!-- Information Main -->
 
-      <div class="main">
-        <div class="media">
+      <div class="container">
+
+      <div class="left">
+        <div class="image-container">
           <img src="./resources/images/information-main.jpg">
         </div>
         <h2>It doesn't hurt to keep practicing</h2>
@@ -57,15 +74,17 @@
         nulla. Vestibulum in augue aliquet, interdum nisl eu, blandit nisl.
         Donec lacus erat, interdum sit amet nunc in, rhoncus dictum turpis. Nulla
         facilisi. Donec aliquam scelerisque semper.&quot;</p>
-        <p>Emanuel, Sr Strategist at Hiring.com</p>
+        <span>Emanuel, Sr Strategist at Hiring.com</span>
       </div>
 
       <!-- Information list-->
 
-      <div class="information list">
+      <div class="right">
         <div class="item">
+          <div class="image-container">
           <img class="desktop" src="./resources/images/information-orientation.jpg">
           <img class="mobile" src="./resources/images/information-orientation-mobile2.jpg">
+          </div>
           <div class="info">
             <h3>Orientation day</h3>
             <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
@@ -73,8 +92,10 @@
           </div>
         </div>
         <div class="item">
+          <div class="image-container">
           <img class="desktop" src="./resources/images/information-campus.jpg">
           <img class="mobile" src="./resources/images/information-campus-mobile.jpg">
+          </div>
           <div class="info">
             <h3>Our campus</h3>
             <p>Find which campus is close by you</p>
@@ -82,8 +103,10 @@
           </div>
         </div>
         <div class="item">
+          <div class="image-container">
           <img class="desktop" src="./resources/images/information-guest-lecture.jpg">
           <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg">
+          </div>
           <div class="info">
             <h3>Our guest lecture</h3>
             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -92,27 +115,34 @@
         </div>
       </div>
 
+      </div>
+    </section>
+
       <!-- Courses -->
 
-      <div class="main-courses">
-        <div class="title">
-          <h2>Start learining</h2>
-        </div>
+      <section class="flex learning">
+        <h2>Start learning</h2>
+
+        <div class="container">
+
+          <!-- First Row -->
+        <div class="first row">
+
         <div class="course">
-          <div>
+          <div class="image-container">
             <img src="./resources/images/course-software.jpg">
           </div>
-          <div>
+          <div class="content">
             <h3>Software engineering</h3>
             <p>COURSES</p>
             <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
         <div class="course">
-          <div>
+          <div class="image-container">
             <img src="./resources/images/course-computer-art.jpg">
           </div>
-          <div>
+          <div class="content">
             <h3>Computer art</h3>
             <p>COURSES</p>
             <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects,
@@ -120,57 +150,66 @@
           </div>
         </div>
         <div class="course">
-          <div>
+          <div class="image-container">
             <img src="./resources/images/course-design.jpg">
           </div>
-          <div>
+          <div class="content">
             <h3>Design</h3>
             <p>COURSES</p>
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
         </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="second row">
+
         <div class="course">
-          <div>
+          <div class="image-container">
             <img src="./resources/images/course-data.jpg">
           </div>
-          <div>
+          <div class="content">
             <h3>Data</h3>
             <p>COURSES</p>
             <p>Data Sience, Big Data, SQL, Data Visualization</p>
           </div>
         </div>
         <div class="course">
-          <div>
+          <div class="image-container">
             <img src="./resources/images/course-business.jpg">
           </div>
-          <div>
+          <div class="content">
             <h3>Business</h3>
             <p>COURSES</p>
             <p>Product Development, Business Development, Startup</p>
           </div>
         </div>
         <div class="course">
-          <div>
+          <div class="image-container">
             <img src="./resources/images/course-marketing.jpg">
           </div>
-          <div>
+          <div class="content">
             <h3>Marketing</h3>
             <p>COURSES</p>
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
         </div>
+      </div>
 
-        <!-- Thesis Main -->
+      </div>
+    </section>
 
-        <div class="thesis">
-          <div class="title">
-            <h2>Start learining</h2>
-          </div>
+        <!-- Thesis -->
 
+        <section class="flex thesis">
+          <h2>Thesis exhibit</h2>
           <!-- Thesis Main -->
-          <div class="main">
+
+          <div class="container">
+
+          <div class="left thesis-main">
             <div class="media">
-              <video>
+              <video width="100%" controls>
                 <source src="./resources/videos/thesis.mp4" type="video/mp4">
               </video>
             </div>
@@ -183,16 +222,20 @@
           </div>
 
           <!-- Thesis List -->
-          <div class="thesis list">
+          <div class="right thesis-list">
             <div class="item">
+              <div class="image-container">
               <img src="./resources/images/thesis-fisma.jpg">
+              </div>
               <div class="info">
                 <h3>Fisma: Design and Prototype</h3>
                 <p>Designer showcase of new prototype product</p>
               </div>
             </div>
             <div class="item">
+              <div class="image-container">
               <img src="./resources/images/thesis-now-and-then.jpg">
+              </div>
               <div class="info">
                 <h3>Now and then</h3>
                 <p>Research study about New York</p>
@@ -201,19 +244,20 @@
           </div>
 
         </div>
-
-      </div>
+      </section>
 
     <!-- Footer -->
 
-    <footer class="container">
-      <div>&copy; 2016 Colmar Academy. All rights reserved</div>
+    <footer>
+      <div class="container">
+      <div class="copy">&copy; 2016 Colmar Academy. All rights reserved</div>
       <nav class="desktop">
         <ul>
           <li><a href="#">Terms</a></li>
           <li><a href="#">Privacy</a></li>
         </ul>
       </nav>
+      </div>
     </footer>
 
   </body>
