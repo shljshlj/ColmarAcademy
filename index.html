@@ -2,23 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Colmar Academy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-    <title>Colmar Academy</title>
   </head>
   <body>
 
     <!-- Header -->
 
-    <header >
+    <header>
       <div class="container">
-        <div class="logo">
-          <img src="./resources/images/ic-logo.svg">
-          <span>
-            <a href="index.html" class="desktop"><em>COLMAR</em><span class="light">ACADEMY</span></a>
-          </span>
+        <div class="logo desktop">
+          <a href="index.html" >
+            <div class="flex">
+            <img src="./resources/images/ic-logo.svg">
+            <span class="strong">COLMAR</span>
+            <span class="light">ACADEMY</span>
+            </div>
+          </a>
         </div>
+
         <nav class="desktop">
           <ul>
             <li><a href="#">On campus</a></li>
@@ -29,6 +34,7 @@
         </nav>
         <nav class="mobile">
           <ul>
+            <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
             <li><a href="#"><img src ="./resources/images/ic-on-campus.svg"></a></li>
             <li><a href="#"><img src ="./resources/images/ic-online.svg"></a></li>
             <li><a href="#"><img src ="./resources/images/ic-login.svg"></a></li>
@@ -36,7 +42,6 @@
         </nav>
       </div>
     </header>
-
 
     <!-- Banner -->
 
@@ -49,7 +54,7 @@
         </div>
         <div class="right">
           <div class="main">
-            <h1>Learn something new every day</h1>
+            <h1>Learn something new everyday</h1>
             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
             <a class="button" href="#">Start here</a>
           </div>
@@ -120,7 +125,7 @@
 
       <!-- Courses -->
 
-      <section class="flex learning">
+      <section class="flex courses">
         <h2>Start learning</h2>
 
         <div class="container">
@@ -129,32 +134,44 @@
         <div class="first row">
 
         <div class="course">
-          <div class="image-container">
-            <img src="./resources/images/course-software.jpg">
+          <div class="image-container desktop">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="./resources/images/course-software.jpg">
+              </div>
+            </a>
           </div>
           <div class="content">
-            <h3>Software engineering</h3>
+            <h3><a class="headline" href="#">Software engineering</a></h3>
             <p>COURSES</p>
             <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </div>
         <div class="course">
-          <div class="image-container">
-            <img src="./resources/images/course-computer-art.jpg">
+          <div class="image-container desktop">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="./resources/images/course-computer-art.jpg">
+              </div>
+            </a>
           </div>
           <div class="content">
-            <h3>Computer art</h3>
+            <h3><a class="headline" href="#">Computer art</a></h3>
             <p>COURSES</p>
             <p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects,
             Computer Animation</p>
           </div>
         </div>
         <div class="course">
-          <div class="image-container">
-            <img src="./resources/images/course-design.jpg">
+          <div class="image-container desktop">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="./resources/images/course-design.jpg">
+              </div>
+            </a>
           </div>
           <div class="content">
-            <h3>Design</h3>
+            <h3><a class="headline" href="#">Design</a></h3>
             <p>COURSES</p>
             <p>User Experience Design, User Research, Visual Design</p>
           </div>
@@ -165,31 +182,43 @@
         <div class="second row">
 
         <div class="course">
-          <div class="image-container">
-            <img src="./resources/images/course-data.jpg">
+          <div class="image-container desktop">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="./resources/images/course-data.jpg">
+              </div>
+            </a>
           </div>
           <div class="content">
-            <h3>Data</h3>
+            <h3><a class="headline" href="#">Data</a></h3>
             <p>COURSES</p>
             <p>Data Sience, Big Data, SQL, Data Visualization</p>
           </div>
         </div>
         <div class="course">
-          <div class="image-container">
-            <img src="./resources/images/course-business.jpg">
+          <div class="image-container desktop">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="./resources/images/course-business.jpg">
+              </div>
+            </a>
           </div>
           <div class="content">
-            <h3>Business</h3>
+            <h3><a class="headline" class="headline" href="#">Business</a></h3>
             <p>COURSES</p>
             <p>Product Development, Business Development, Startup</p>
           </div>
         </div>
         <div class="course">
-          <div class="image-container">
-            <img src="./resources/images/course-marketing.jpg">
+          <div class="image-container desktop">
+            <a href="#">
+              <div class="img-wrapper">
+                <img src="./resources/images/course-marketing.jpg">
+              </div>
+            </a>
           </div>
           <div class="content">
-            <h3>Marketing</h3>
+            <h3><a class="headline" href="#">Marketing</a></h3>
             <p>COURSES</p>
             <p>Analytics, Content Marketing, Mobile Marketing</p>
           </div>
@@ -209,7 +238,7 @@
 
           <div class="left thesis-main">
             <div class="media">
-              <video width="100%" controls>
+              <video width="100%" loop autoplay>
                 <source src="./resources/videos/thesis.mp4" type="video/mp4">
               </video>
             </div>
