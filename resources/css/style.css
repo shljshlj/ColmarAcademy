@@ -1,6 +1,7 @@
 html {
   font-family: "Helvetica", sans-serif;
   font-size: 16px;
+  color: #414141;
 }
 
 .container {
@@ -17,20 +18,21 @@ html {
 }
 
 /* Color list */
+
 header {
-  background-color: #333241;
+  background-color: #FFFFFF;
 }
 
 #banner {
-  background-color: #375270;
+  background-color: #5D5B68;
 }
 
 section.information {
-  background-color: #A2AFC0;
+  background-color: #dadada;
 }
 
 section.courses {
-  background-color: #6E8BA9;
+  background-color: #FFFFFF;
 }
 
 .learning .course {
@@ -38,11 +40,11 @@ section.courses {
 }
 
 section.thesis {
-  background-color: #A2AFC0;
+  background-color: #BCCCE1;
 }
 
 footer {
-  background-color: #333241;
+  background-color: #828E9E;
 }
 
 /* Header */
@@ -50,22 +52,21 @@ footer {
 header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 4rem;
-
 }
 
 header .logo {
-  flex: 1;
+  padding-left: 1.5rem;
 }
 
-header .flex {
+.logo a {
   display: flex;
   align-items: center;
-  padding-left: 1.5rem;
   font-size: 1.5rem;
 }
 
-header .flex img {
+header .logo img {
   height: 3rem;
 }
 
@@ -154,7 +155,7 @@ nav a img {
 }
 
 .button {
-  background-color: black;
+  background-color: #414141;
   color: white;
   padding: 0.8rem 0;
   width: 100%;
@@ -258,7 +259,7 @@ nav a img {
 }
 
 .information .right .item:last-child {
-  background-color: #C6D6EB;
+  background-color: #E9E9E9;
 }
 
 @media only screen and (max-width: 768px) {
@@ -323,6 +324,7 @@ section h2 {
 .course {
   flex: 1;
   margin: 0 .75rem;
+  background: #f7f7f7;
   box-shadow: 0 0 10px rgba(0,0,0,.15),0 3px 3px rgba(0,0,0,.15);
 }
 
@@ -399,7 +401,10 @@ a.headline:hover {
 
 .thesis .container {
   display: flex;
+}
 
+.left.thesis-main {
+  padding-bottom: 6rem;
 }
 
 .thesis h3 {
@@ -419,7 +424,7 @@ a.headline:hover {
 .thesis .right .item:first-child {
   margin-top: 2rem;
   padding-top: 1rem;
-  background-color: #C6D6EB;
+  background-color: #738090;
 }
 
 @media only screen and (max-width: 768px) {
@@ -442,10 +447,23 @@ a.headline:hover {
 
 footer .container {
   display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  font-size: 1.5rem;
+  color:Tomato;
+  align-self: end;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+footer .bottom-row {
+  display: flex;
   padding-top: 1rem;
   padding-bottom: 2.5rem;
   font-size: 0.8rem;
-
+  border-top: 1px solid #626972;
 }
 
 footer .copy {
