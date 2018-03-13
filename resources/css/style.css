@@ -320,6 +320,13 @@ nav a img {
   border-bottom: none;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .information .right,
+  .thesis .right {
+    margin-right: 1.5rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .information .right {
     width: 100%;
